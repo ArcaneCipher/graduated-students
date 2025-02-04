@@ -5,7 +5,7 @@ const students = [
     grade: 85,
     email: "ankit@example.com",
     phone: "555-555-5555",
-    graduated: true,
+    graduated: true
   },
   {
     name: "Kayla",
@@ -13,7 +13,7 @@ const students = [
     grade: 92,
     email: "kayla@example.com",
     phone: "555-555-5555",
-    graduated: false,
+    graduated: false
   },
   {
     name: "Charina",
@@ -21,7 +21,7 @@ const students = [
     grade: 89,
     email: "charina@example.com",
     phone: "555-555-5555",
-    graduated: true,
+    graduated: true
   },
   {
     name: "Bernard",
@@ -29,7 +29,7 @@ const students = [
     grade: 75,
     email: "bernard@example.com",
     phone: "555-555-5555",
-    graduated: true,
+    graduated: true
   },
   {
     name: "Kevin",
@@ -37,7 +37,7 @@ const students = [
     grade: 82,
     email: "kevin@example.com",
     phone: "555-555-5555",
-    graduated: false,
+    graduated: false
   },
   {
     name: "Hasheem",
@@ -45,7 +45,7 @@ const students = [
     grade: 82,
     email: "hasheem@example.com",
     phone: "555-555-5555",
-    graduated: true,
+    graduated: true
   },
   {
     name: "Erwin",
@@ -53,7 +53,7 @@ const students = [
     grade: 72,
     email: "erwin@example.com",
     phone: "555-555-5555",
-    graduated: true,
+    graduated: true
   },
   {
     name: "Christopher",
@@ -61,7 +61,7 @@ const students = [
     grade: 86,
     email: "christopher@example.com",
     phone: "555-555-5555",
-    graduated: true,
+    graduated: true
   },
   {
     name: "Angela",
@@ -69,7 +69,7 @@ const students = [
     grade: 80,
     email: "angela@example.com",
     phone: "555-555-5555",
-    graduated: true,
+    graduated: true
   },
 ];
 
