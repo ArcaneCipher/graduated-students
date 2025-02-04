@@ -5,7 +5,7 @@ const students = [
     grade: 85,
     email: "ankit@example.com",
     phone: "555-555-5555",
-    graduated: true
+    graduated: true,
   },
   {
     name: "Kayla",
@@ -13,7 +13,7 @@ const students = [
     grade: 92,
     email: "kayla@example.com",
     phone: "555-555-5555",
-    graduated: false
+    graduated: false,
   },
   {
     name: "Charina",
@@ -21,7 +21,7 @@ const students = [
     grade: 89,
     email: "charina@example.com",
     phone: "555-555-5555",
-    graduated: true
+    graduated: true,
   },
   {
     name: "Bernard",
@@ -29,7 +29,7 @@ const students = [
     grade: 75,
     email: "bernard@example.com",
     phone: "555-555-5555",
-    graduated: true
+    graduated: true,
   },
   {
     name: "Kevin",
@@ -37,7 +37,7 @@ const students = [
     grade: 82,
     email: "kevin@example.com",
     phone: "555-555-5555",
-    graduated: false
+    graduated: false,
   },
   {
     name: "Hasheem",
@@ -45,7 +45,7 @@ const students = [
     grade: 82,
     email: "hasheem@example.com",
     phone: "555-555-5555",
-    graduated: true
+    graduated: true,
   },
   {
     name: "Erwin",
@@ -53,7 +53,7 @@ const students = [
     grade: 72,
     email: "erwin@example.com",
     phone: "555-555-5555",
-    graduated: true
+    graduated: true,
   },
   {
     name: "Christopher",
@@ -61,7 +61,7 @@ const students = [
     grade: 86,
     email: "christopher@example.com",
     phone: "555-555-5555",
-    graduated: true
+    graduated: true,
   },
   {
     name: "Angela",
@@ -69,10 +69,37 @@ const students = [
     grade: 80,
     email: "angela@example.com",
     phone: "555-555-5555",
-    graduated: true
+    graduated: true,
   },
 ];
 
 const graduatedStudents = (listOfStudents) => {
-//Implement function
+  //Implement function
+
+  /** Steps
+   * Note: students are objects in an array
+   * 1. create empty result array
+   * 2. loop through the student object array
+   * 3. destructure the student object
+   * 4. for each graduated true push graduated message to result array
+   * 5. for each graduated false push not graduate message to result array
+   * 6. return result array
+   */
+
+  let result = [];
+
+  for (const student of listOfStudents) {
+    // Desctructure student object
+    const { name, email, graduated } = student;
+
+    if (graduated === true) {
+      result.push(`${name} has graduated and their diploma will be sent to ${email}.`);
+    } else if (graduated === false) {
+      result.push(`${name} has not graduated yet, no diploma will be sent.`);
+    }
+  }
+
+  return result;
 };
+
+console.log(graduatedStudents(students));
